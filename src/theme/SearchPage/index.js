@@ -188,7 +188,7 @@ function SearchPage() {
   const algoliaHelper = algoliaSearchHelper(typesenseInstantSearchAdapter.searchClient, typesenseCollectionName, {
     hitsPerPage: 15,
     advancedSyntax: true,
-    disjunctiveFacets: ['language', 'docusaurus_tag'],
+    disjunctiveFacets: ['language'],
     highlightPreTag: '<algolia-docsearch-suggestion--highlight>',
     highlightPostTag: '</algolia-docsearch-suggestion--highlight>',
   });
